@@ -10,7 +10,7 @@ const ItemList = () => {
 
 
     return (
-        <Grid item xs={12}>
+      <Grid item xs={12}>
         <Grid container justify="center" spacing="3">
           {data.map((value) => (
             <Grid key={value} item>
