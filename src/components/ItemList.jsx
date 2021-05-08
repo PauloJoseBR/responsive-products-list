@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ItemLists = () => {
+const ItemList = () => {
 
     const axios = require('axios')
     const response = axios.get('/products/')
@@ -14,4 +14,4 @@ const ItemLists = () => {
     )
 }
 
-export default ItemLists
+export default ItemList
