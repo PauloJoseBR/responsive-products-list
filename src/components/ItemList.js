@@ -2,10 +2,10 @@ import { Grid } from '@material-ui/core'
 import React from 'react'
 import Item  from './Item'
 
-const ItemList = () => {
+const ItemList = async () => {
 
     const axios = require('axios')
-    const response = axios.get('/products/')
+    const response = await axios.get('/products/')
     const { data } = response
 
 
