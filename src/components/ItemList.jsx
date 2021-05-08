@@ -1,5 +1,6 @@
 import { Grid } from '@material-ui/core'
 import React from 'react'
+import { Item } from 'Item.jsx'
 
 const ItemList = () => {
 
@@ -13,7 +14,7 @@ const ItemList = () => {
         <Grid container justify="center" spacing="3">
           {data.map((value) => (
             <Grid key={value} item>
-            
+              <Item item={value}></Item>
             </Grid>
           ))}
         </Grid>
