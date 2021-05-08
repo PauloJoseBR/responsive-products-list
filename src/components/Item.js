@@ -34,7 +34,7 @@ const Item = ( {item} ) => {
                 {item.title}
               </Typography>
               <Typography gutterBottom variant="h5" component="h2">
-                {item.price}
+                R$ {item.price}
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
                 {item.description}
@@ -46,7 +46,7 @@ const Item = ( {item} ) => {
               Share
             </Button>
             <Button size="small" color="primary">
-              Learn More
+              Buy with a click
             </Button>
           </CardActions>
       </Card>
