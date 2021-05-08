@@ -13,7 +13,6 @@ const ItemList = () => {
         <Grid container justify="center" spacing="3">
           {[0, 1, 2].map((value) => (
             <Grid key={value} item>
-              <Paper className={classes.paper} />
             </Grid>
           ))}
         </Grid>
