@@ -11,8 +11,9 @@ const ItemList = () => {
     return (
         <Grid item xs={12}>
         <Grid container justify="center" spacing="3">
-          {[0, 1, 2].map((value) => (
+          {data.map((value) => (
             <Grid key={value} item>
+            
             </Grid>
           ))}
         </Grid>
