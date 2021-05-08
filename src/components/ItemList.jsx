@@ -1,3 +1,4 @@
+import { Grid } from '@material-ui/core'
 import React from 'react'
 
 const ItemList = () => {
@@ -8,9 +9,15 @@ const ItemList = () => {
 
 
     return (
-        <div>
-            
-        </div>
+        <Grid item xs={12}>
+        <Grid container justify="center" spacing="3">
+          {[0, 1, 2].map((value) => (
+            <Grid key={value} item>
+              <Paper className={classes.paper} />
+            </Grid>
+          ))}
+        </Grid>
+      </Grid>
     )
 }
 
