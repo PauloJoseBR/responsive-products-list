@@ -13,7 +13,7 @@ const ItemList = async () => {
       <Grid item xs={12}>
         <Grid container justify="center" spacing="3">
           {data.map((value) => (
-            <Grid key={value} item>
+            <Grid key={value.id} item>
               <Item item={value}></Item>
             </Grid>
           ))}
