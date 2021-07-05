@@ -1,6 +1,6 @@
-import { Grid } from '@material-ui/core'
 import React, { useEffect, useState } from 'react'
 import Item  from './Item'
+import './ItemList.css'
 
 const ItemList = () => {
 
@@ -19,15 +19,13 @@ const ItemList = () => {
     }, [axios]);
   
     return (
-      <Grid item xs={12}>
-        <Grid container justify="center" spacing="3">
-          {data.map((value) => (
-            <Grid key={value.id} item>
-              <Item item={value}></Item>
-            </Grid>
-          ))}
-        </Grid>
-      </Grid>
+      <section class="products">
+        {data.map((value) => (
+          <div class="product-card">
+            <Item item={value}></Item>
+          </div>
+        ))}
+      </section>
     )
 }
 
